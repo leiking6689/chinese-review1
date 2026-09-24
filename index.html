@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>六年级上册语文复习与练习 · 第1-7课（开学至《我的战友邱少云》）</title>
+<title>六年级上册语文总复习与练习 · 课文＋文言文＋《童年》</title>
 <style>
   :root{
     --paper:#F4EEE2;
     --card:#FDFBF5;
     --ink:#2B2724;
     --ink-soft:#70675C;
-    --red:#A43A2E;          /* 中国红 */
+    --red:#A43A2E;
     --red-dark:#7E2A21;
-    --gold:#B08535;         /* 米金 */
+    --gold:#B08535;
     --gold-soft:#F4EAD2;
     --red-soft:#F4E3DE;
     --line:#E2DAC7;
@@ -22,22 +22,16 @@
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
+    margin:0;background:var(--paper);color:var(--ink);
     font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
-    line-height:1.85;
-    font-size:16px;
+    line-height:1.85;font-size:16px;
   }
   h1,h2,h3,.serif{font-family:"Songti SC","STSong","SimSun","Noto Serif SC",Georgia,serif;}
   a{color:var(--red-dark);}
 
-  /* ===== 顶部 ===== */
   header.hero{
     background:linear-gradient(135deg,#F0DDD4 0%,#F0E8D8 50%,#F4EAD2 100%);
-    border-bottom:1px solid var(--line);
-    padding:54px 20px 42px;
-    text-align:center;
+    border-bottom:1px solid var(--line);padding:54px 20px 42px;text-align:center;
   }
   .hero-inner{max-width:900px;margin:0 auto;}
   .hero .kicker{
@@ -49,18 +43,16 @@
   .hero .tags{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
   .hero .tags span{font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 14px;color:var(--ink-soft);}
   .hero .quote{
-    margin:26px auto 0;max-width:680px;font-family:"Songti SC","STSong",serif;color:var(--red-dark);
-    font-size:16px;border-left:3px solid var(--gold);text-align:left;padding:10px 0 10px 16px;
+    margin:26px auto 0;max-width:700px;font-family:"Songti SC","STSong",serif;color:var(--red-dark);
+    font-size:15.5px;border-left:3px solid var(--gold);text-align:left;padding:10px 0 10px 16px;
     background:rgba(255,255,255,.6);border-radius:0 8px 8px 0;letter-spacing:1px;
   }
 
-  /* ===== 导航 ===== */
   nav.toc{position:sticky;top:0;z-index:50;background:rgba(244,238,226,.93);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);}
   nav.toc ul{max-width:1000px;margin:0 auto;padding:10px 16px;list-style:none;display:flex;gap:6px;flex-wrap:wrap;justify-content:center;}
   nav.toc a{display:block;text-decoration:none;font-size:14px;color:var(--ink);padding:6px 16px;border-radius:999px;border:1px solid transparent;transition:all .15s;}
   nav.toc a:hover{background:#fff;border-color:var(--line);color:var(--red-dark);}
 
-  /* ===== 主体 ===== */
   main{max-width:1000px;margin:0 auto;padding:36px 20px 60px;}
   section{margin-bottom:56px;scroll-margin-top:70px;}
   .sec-head{display:flex;align-items:center;gap:14px;margin-bottom:22px;}
@@ -81,12 +73,9 @@
 
   .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
 
-  /* 课次速览 */
   .lesson{background:linear-gradient(120deg,#FDFBF5,#F5EEE3);border-left:5px solid var(--red);}
   .lesson .lesson-top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:8px;}
-  .lesson .lesson-no{
-    font-family:Georgia,serif;font-size:13px;color:#fff;background:var(--red);border-radius:6px;padding:2px 10px;
-  }
+  .lesson .lesson-no{font-family:Georgia,serif;font-size:13px;color:#fff;background:var(--red);border-radius:6px;padding:2px 10px;}
   .lesson h3{margin:0;font-size:20px;}
   .lesson h3::before{display:none;}
   .lesson .meta{font-size:13px;color:var(--ink-soft);}
@@ -104,7 +93,13 @@
   }
   .unit-band b{letter-spacing:1px;}
 
-  /* 表格 */
+  .wenyan{background:linear-gradient(120deg,#FDFBF5,#EFE9DC);border-left:5px solid var(--gold);}
+  .wenyan .lesson-no{background:var(--gold);}
+  .wenyan .orig{
+    background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:10px 0;
+    font-family:"Songti SC","STSong",serif;font-size:16px;line-height:2;
+  }
+
   table{width:100%;border-collapse:collapse;font-size:14.5px;background:#fff;border-radius:10px;overflow:hidden;}
   caption{text-align:left;font-size:14px;color:var(--ink-soft);padding:0 4px 8px;}
   th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top;}
@@ -112,26 +107,22 @@
   td .py{color:var(--gold);}
   .table-wrap{overflow-x:auto;border-radius:10px;}
 
-  /* 字词chip */
   .chips{display:flex;flex-wrap:wrap;gap:10px;}
   .chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:15px;}
   .chip .py{color:var(--gold);font-size:13px;margin-left:5px;}
   .chip small{color:var(--ink-soft);margin-left:5px;font-size:12px;}
 
-  /* 折叠题 */
   details.quiz{background:#fff;border:1px solid var(--line);border-radius:12px;padding:0;margin-bottom:12px;}
   details.quiz summary{cursor:pointer;list-style:none;padding:14px 18px;font-size:15.5px;display:flex;align-items:flex-start;gap:10px;user-select:none;}
   details.quiz summary::-webkit-details-marker{display:none;}
   details.quiz summary::before{content:"▶";font-size:11px;color:var(--red);transition:transform .2s;flex:none;margin-top:5px;}
   details.quiz[open] summary::before{transform:rotate(90deg);}
   details.quiz summary .q-tag{flex:none;font-size:12px;background:var(--gold-soft);color:var(--red-dark);border-radius:6px;padding:2px 8px;margin-top:2px;}
-  details.quiz .q-body{flex:1;}
   details.quiz .ans{border-top:1px dashed var(--line);padding:12px 18px 16px;font-size:15px;background:#FBF7EE;border-radius:0 0 12px 12px;}
   details.quiz .ans p{margin:6px 0;}
   details.quiz .ans .key{color:var(--red-dark);font-weight:600;}
   .self-test-hint{font-size:13.5px;color:var(--ink-soft);background:var(--red-soft);border-radius:8px;padding:8px 14px;margin-bottom:14px;}
 
-  /* 试卷 */
   .paper-card{background:#FDFBF5;}
   .paper-title{text-align:center;font-family:"Songti SC",serif;font-size:23px;color:var(--red-dark);letter-spacing:3px;margin:4px 0 2px;}
   .paper-info{text-align:center;font-size:13.5px;color:var(--ink-soft);margin-bottom:14px;}
@@ -142,8 +133,11 @@
   .exam-q{font-size:15px;margin:10px 0;padding-left:6px;}
   .exam-q .n{color:var(--red);font-weight:700;margin-right:4px;}
   .blanks{color:var(--red);letter-spacing:2px;}
-
-  .tagline{text-align:center;font-size:13px;color:var(--ink-soft);margin:2px 0 14px;letter-spacing:1px;}
+  .read-passage{
+    background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:10px 0;
+    font-size:15px;line-height:2;
+  }
+  .read-passage .pt{font-family:"Songti SC",serif;font-size:17px;color:var(--red-dark);text-align:center;margin-bottom:8px;letter-spacing:1px;}
 
   footer{border-top:1px solid var(--line);padding:26px 20px 40px;text-align:center;color:var(--ink-soft);font-size:13px;background:#EAE1CE;}
   footer a{margin:0 8px;font-size:13px;}
@@ -173,14 +167,15 @@
 
 <header class="hero">
   <div class="hero-inner">
-    <span class="kicker">部编版语文 · 六年级上册（2024修订版）· 阶段总复习</span>
-    <h1>开学至《我的战友邱少云》<br>复习与练习</h1>
-    <p class="sub">7 课知识速览 ｜ 字词大盘点 ｜ 分课练习 ｜ 阶段综合测试卷</p>
+    <span class="kicker">部编版语文 · 六年级上册 · 阶段总复习（扩展版）</span>
+    <h1>课文 ＋ 文言文 ＋《童年》<br>总复习与练习</h1>
+    <p class="sub">10 个内容板块知识速览 ｜ 字词大盘点 ｜ 分课练习 ｜ 综合测试卷（含课外记叙文阅读）</p>
     <div class="tags">
-      <span>第一单元：草原 · 丁香结 · 诗词三首</span>
-      <span>第二单元：七律·长征 · 狼牙山五壮士 · 开国大典 · 我的战友邱少云</span>
+      <span>现代文 7 课：草原 · 丁香结 · 诗词三首 · 长征 · 狼牙山 · 开国大典 · 邱少云</span>
+      <span>文言文：伯牙鼓琴 · 陈太丘与友期行</span>
+      <span>整本书：高尔基《童年》</span>
     </div>
-    <p class="quote">蒙汉情深何忍别，天涯碧草话斜阳。<br>红军不怕远征难，万水千山只等闲。<br>为了整个班，为了整个潜伏部队，为了这次战斗的胜利——邱少云像千斤巨石一般，趴在火堆里一动也不动。</p>
+    <p class="quote">巍巍乎若太山，汤汤乎若流水——知音难觅。<br>日中不至，则是无信；对子骂父，则是无礼——方正有礼。<br>在黑暗的生活里，外祖母像一盏明灯，照亮阿廖沙"到人间去"的路。</p>
   </div>
 </header>
 
@@ -200,277 +195,152 @@
   <div class="sec-head">
     <span class="sec-num">一</span>
     <div>
-      <h2>七课知识速览</h2>
+      <h2>知识速览</h2>
       <div class="en">LESSON REVIEW</div>
     </div>
   </div>
 
-  <div class="unit-band"><b>第一单元 · 一花一草总关情</b>　｜　阅读要素：阅读时能从所读内容想开去（联系生活、联系同类文章）。</div>
+  <div class="unit-band"><b>第一单元 · 一花一草总关情</b>　｜　阅读要素：阅读时能从所读内容想开去。</div>
 
-  <!-- 第1课 -->
   <div class="card lesson">
     <div class="lesson-top">
-      <span class="lesson-no">第 1 课</span>
-      <h3>草原</h3>
+      <span class="lesson-no">第 1 课</span><h3>草原</h3>
       <span class="meta">作者：<b>老舍</b>（原名舒庆春，"人民艺术家"）｜ 散文</span>
     </div>
     <dl class="blocks">
-      <dt>主要内容</dt><dd>作者第一次访问内蒙古大草原，按事情发展顺序写了<b>草原美景、喜迎远客、主客联欢、依依话别</b>。</dd>
-      <dt>中心思想</dt><dd>赞美草原的<b>风光美、人情美、民俗美</b>，表现蒙汉两族人民亲如一家的深厚情谊。</dd>
-      <dt>写法要点</dt><dd><b>情景交融</b>（"既使人惊叹，又叫人舒服"）、比喻（羊群像白色大花、小丘线条像中国画）、动静结合、首尾呼应。</dd>
-      <dt>背诵默写</dt><dd>第 1 自然段要求背诵。</dd>
+      <dt>主要内容</dt><dd>按事情发展顺序写<b>草原美景、喜迎远客、主客联欢、依依话别</b>。</dd>
+      <dt>中心思想</dt><dd>赞美草原的<b>风光美、人情美、民俗美</b>，表现蒙汉人民亲如一家的深情。</dd>
+      <dt>写法要点</dt><dd><b>情景交融</b>、比喻（羊群像白色大花）、动静结合；第 1 自然段背诵。</dd>
+      <dt>名句</dt><dd>蒙汉情深何忍别，天涯碧草话斜阳。</dd>
     </dl>
-    <div class="key-line">名句：蒙汉情深何忍别，天涯碧草话斜阳。——直抒蒙汉惜别深情</div>
   </div>
 
-  <!-- 第2课 -->
   <div class="card lesson">
     <div class="lesson-top">
-      <span class="lesson-no">第 2 课</span>
-      <h3>丁香结</h3>
-      <span class="meta">作者：<b>宗璞</b>（原名冯钟璞，哲学家冯友兰之女）｜ 散文</span>
+      <span class="lesson-no">第 2 课</span><h3>丁香结</h3>
+      <span class="meta">作者：<b>宗璞</b>（原名冯钟璞）｜ 散文</span>
     </div>
     <dl class="blocks">
-      <dt>主要内容</dt><dd>先写城里街旁、宅院、斗室外丁香花的<b>色、形、味</b>（赏花），再由古人词句引出<b>丁香结</b>，写雨中丁香结的形象及作者的感悟。</dd>
-      <dt>中心思想</dt><dd>生活不可能总是一帆风顺，<b>人生中的问题、愁怨是解不完的；正因为如此，人生才多彩多姿</b>，应用豁达的态度面对。</dd>
-      <dt>写法要点</dt><dd><b>托物言志（借物喻理）</b>、虚实结合（眼前的结＋诗句中的结）、拟人（"探出""窥着行人"）。</dd>
-      <dt>关键理解</dt><dd>"丁香结"本义：丁香花苞圆圆的、鼓鼓的，恰如衣襟上的盘花扣；象征义：生活中不顺心的事、解不开的愁怨。</dd>
+      <dt>主要内容</dt><dd>先写丁香花的<b>色、形、味</b>，再写雨中<b>丁香结</b>及作者的感悟。</dd>
+      <dt>中心思想</dt><dd><b>人生的问题解不完，生活才多彩多姿</b>；要豁达面对不顺心的事。</dd>
+      <dt>写法要点</dt><dd><b>托物言志（借物喻理）</b>、虚实结合、拟人。</dd>
+      <dt>关键理解</dt><dd>"丁香结"本义＝盘花扣似的花苞；象征义＝解不开的愁怨与难题。</dd>
     </dl>
-    <div class="key-line">名句：结，是解不完的；人生中的问题也是解不完的，不然，岂不太平淡无味了吗？</div>
   </div>
 
-  <!-- 第3课 -->
   <div class="card lesson">
     <div class="lesson-top">
-      <span class="lesson-no">第 3 课</span>
-      <h3>古诗词三首</h3>
+      <span class="lesson-no">第 3 课</span><h3>古诗词三首</h3>
       <span class="meta">唐·孟浩然 ｜ 宋·苏轼 ｜ 宋·辛弃疾</span>
     </div>
     <dl class="blocks">
-      <dt>宿建德江</dt><dd><b>五言绝句</b>。写秋日黄昏泊舟建德江所见。名句"野旷天低树，江清月近人"——对偶＋拟人，以旷野明月反衬<b>羁旅孤寂之愁</b>。</dd>
-      <dt>六月二十七日望湖楼醉书（其一）</dt><dd><b>七言绝句</b>。一句一画：黑云翻墨→白雨跳珠→风来雨散→水如天。比喻生动、黑白对比，"忽"字传神，表达对西湖骤雨的<b>惊喜赞叹</b>。</dd>
-      <dt>西江月·夜行黄沙道中</dt><dd><b>词</b>（西江月是词牌名）。上阕写夏夜月明、蝉鸣、稻香、蛙声（拟人、多感官）；下阕写疏星微雨、路转溪桥忽见。表达<b>丰收在望的喜悦与乡村生活的闲适</b>。</dd>
-      <dt>背诵默写</dt><dd>三首全背；《西江月》要求默写。"忽见"的"见"读 xiàn，同"现"。</dd>
+      <dt>宿建德江</dt><dd>五言绝句。"野旷天低树，江清月近人"对偶＋拟人，以景衬<b>羁旅之愁</b>。</dd>
+      <dt>望湖楼醉书</dt><dd>七言绝句。黑云翻墨→白雨跳珠→风来雨散→水如天，"忽"字传神，表<b>惊喜赞叹</b>。</dd>
+      <dt>西江月·夜行黄沙道中</dt><dd>词。上阕稻香蛙声（拟人＋多感官），下阕路转溪桥忽见，表<b>丰收喜悦</b>。"见"读 xiàn。</dd>
+      <dt>背诵</dt><dd>三首全背，《西江月》必默。</dd>
     </dl>
-    <div class="key-line">对比：同样写月——孟浩然以月衬<b>愁</b>，辛弃疾以月衬<b>喜</b>。</div>
   </div>
 
-  <div class="unit-band"><b>第二单元 · 重温革命岁月</b>　｜　阅读要素：了解文章怎样运用<b>点面结合</b>的方法写场面；习作：多彩的活动。</div>
+  <div class="unit-band"><b>第二单元 · 重温革命岁月</b>　｜　阅读要素：了解文章怎样运用<b>点面结合</b>写场面。</div>
 
-  <!-- 第4课 -->
   <div class="card lesson">
     <div class="lesson-top">
-      <span class="lesson-no">第 4 课</span>
-      <h3>七律·长征</h3>
-      <span class="meta">作者：<b>毛泽东</b>（写于 1935 年 10 月，长征即将胜利）｜ 七言律诗</span>
+      <span class="lesson-no">第 4 课</span><h3>七律·长征</h3>
+      <span class="meta">作者：<b>毛泽东</b>（1935 年 10 月）｜ 七言律诗</span>
     </div>
     <dl class="blocks">
-      <dt>主要内容</dt><dd>全诗 56 字，高度概括二万五千里长征。五幅画面：<b>腾越五岭 → 疾跨乌蒙 → 巧渡金沙江 → 飞夺泸定桥 → 喜踏岷山雪</b>。</dd>
-      <dt>中心思想</dt><dd>歌颂红军<b>不畏艰险、藐视一切困难的革命英雄主义气概和革命乐观主义精神</b>。</dd>
-      <dt>写法要点</dt><dd>总—分—总结构；夸张＋比喻（逶迤五岭只如"细浪"、磅礴乌蒙只似"泥丸"）；颔联颈联对仗；一"<b>暖</b>"一"<b>寒</b>"对比（暖＝巧渡金沙江的喜悦；寒＝飞夺泸定桥的悲壮）。</dd>
-      <dt>背诵默写</dt><dd>全诗要求背诵、默写。</dd>
+      <dt>五幅画面</dt><dd>腾五岭 → 跨乌蒙 → 渡金沙江 → 夺泸定桥 → 踏岷山雪。</dd>
+      <dt>中心思想</dt><dd>歌颂红军<b>不畏艰险的革命英雄主义和乐观主义精神</b>。</dd>
+      <dt>写法要点</dt><dd>总—分—总；夸张比喻（细浪、泥丸）；一<b>暖</b>一<b>寒</b>对比；全诗必背默。</dd>
+      <dt>诗眼</dt><dd>"不怕"。总起：红军不怕远征难，万水千山只等闲。</dd>
     </dl>
-    <div class="key-line">诗眼："不怕"。总起句：红军不怕远征难，万水千山只等闲。</div>
   </div>
 
-  <!-- 第5课 -->
   <div class="card lesson">
     <div class="lesson-top">
-      <span class="lesson-no">第 5 课</span>
-      <h3>狼牙山五壮士</h3>
-      <span class="meta">作者：沈重 ｜ 通讯 ｜ 背景：1941 年秋晋察冀根据地反"扫荡"</span>
+      <span class="lesson-no">第 5 课</span><h3>狼牙山五壮士</h3>
+      <span class="meta">作者：沈重 ｜ 1941 年秋反"扫荡" ｜ 通讯</span>
     </div>
     <dl class="blocks">
-      <dt>五位壮士</dt><dd>班长<b>马宝玉</b>、副班长葛振林、战士宋学义、胡德林、胡福才（七连六班）。</dd>
-      <dt>叙述顺序</dt><dd>按事情发展顺序，五个部分：<b>接受任务 → 痛击敌人 → 引上绝路 → 顶峰歼敌 → 跳下悬崖</b>。</dd>
-      <dt>中心思想</dt><dd>表现五壮士<b>热爱祖国、热爱人民、仇恨敌人、宁死不屈、勇于牺牲</b>的革命精神和英雄气概。</dd>
-      <dt>写法要点</dt><dd><b>点面结合</b>："面"写六班五战士整体诱敌歼敌，"点"写班长马宝玉及每位战士的动作神态。"战士"改称"壮士"——任务完成后以生命为代价引敌绝路，更显悲壮。</dd>
+      <dt>五位壮士</dt><dd>班长<b>马宝玉</b>、葛振林、宋学义、胡德林、胡福才。</dd>
+      <dt>叙述顺序</dt><dd>接受任务 → 痛击敌人 → 引上绝路 → 顶峰歼敌 → 跳下悬崖。</dd>
+      <dt>中心思想</dt><dd><b>热爱祖国、仇恨敌人、宁死不屈、勇于牺牲</b>。</dd>
+      <dt>写法要点</dt><dd><b>点面结合</b>；"战士"改"壮士"更显视死如归的悲壮。</dd>
     </dl>
-    <div class="key-line">点面结合的好处：既见英雄群体的团结勇敢，又见每位战士的英勇顽强，层次感、画面感强。</div>
   </div>
 
-  <!-- 第6课 -->
   <div class="card lesson">
     <div class="lesson-top">
-      <span class="lesson-no">第 6 课</span>
-      <h3>开国大典</h3>
-      <span class="meta">记叙文体 ｜ 时间：1949 年 10 月 1 日下午 3 时 ｜ 地点：北京天安门广场</span>
+      <span class="lesson-no">第 6 课</span><h3>开国大典</h3>
+      <span class="meta">1949 年 10 月 1 日下午 3 时 ｜ 北京天安门广场</span>
     </div>
     <dl class="blocks">
-      <dt>主要场面</dt><dd>按大典进行顺序写四个场面：<b>群众入场 → 举行典礼 → 阅兵式 → 群众游行</b>（会场情况 1-4 段；典礼 5-10 段；阅兵 11-13 段；游行 14-15 段）。</dd>
-      <dt>典礼流程</dt><dd>宣布开始 → 宣告中华人民共和国中央人民政府成立 → 升国旗（鸣礼炮）→ 宣读中央人民政府公告 → 阅兵 → 游行。</dd>
-      <dt>中心思想</dt><dd>展现开国大典<b>庄严、隆重、盛大、热烈</b>的盛况，表达全国人民对新中国诞生的无比自豪、激动和对领袖的热爱。</dd>
-      <dt>写法要点</dt><dd><b>点面结合</b>写阅兵式（"面"写受阅部队整体威武推进，"点"写海军、步兵、炮兵、战车师、骑兵师、空军各自特点）；"光明充满北京城"双关——灯火之光＋新中国带来的光明。</dd>
+      <dt>四个场面</dt><dd>群众入场 → 举行典礼 → 阅兵式 → 群众游行（按时间顺序）。</dd>
+      <dt>中心思想</dt><dd>展现大典<b>庄严隆重盛大</b>，表达人民的自豪激动与对领袖的热爱。</dd>
+      <dt>写法要点</dt><dd><b>点面结合</b>写阅兵；"光明充满北京城"双关——灯火＋新中国的希望。</dd>
+      <dt>关键宣告</dt><dd>中华人民共和国中央人民政府今天成立了！</dd>
     </dl>
-    <div class="key-line">关键宣告：中华人民共和国中央人民政府今天成立了！——中国人民从此站起来了。</div>
   </div>
 
-  <!-- 第7课 -->
   <div class="card lesson">
     <div class="lesson-top">
-      <span class="lesson-no">第 7 课</span>
-      <h3>我的战友邱少云</h3>
-      <span class="meta">作者：李元兴（邱少云战友）｜ 回忆性记叙文 ｜ 抗美援朝 · 391 高地</span>
+      <span class="lesson-no">第 7 课</span><h3>我的战友邱少云</h3>
+      <span class="meta">作者：李元兴 ｜ 抗美援朝 · 391 高地 ｜ 1952.10.12</span>
     </div>
     <dl class="blocks">
-      <dt>时间顺序</dt><dd>天没亮摸进山沟<b>潜伏</b> → 中午敌人打炮、投掷燃烧弹，火烧到邱少云身上 → 他<b>强忍烈火一动不动</b>，壮烈牺牲 → 黄昏部队冲锋报仇，20 分钟歼灭敌人。</dd>
-      <dt>中心思想</dt><dd>歌颂邱少云<b>顾全大局、严守纪律、不惜牺牲自己</b>的崇高革命精神和钢铁般意志。</dd>
-      <dt>写法要点</dt><dd>通过<b>"我"的心理活动</b>侧面烘托（"心像刀绞一般"——担心、不忍又忍不住不看）；以"千斤巨石"比喻邱少云纹丝不动；环境描写（离敌仅 60 多米、居高临下）反衬潜伏纪律之严。</dd>
-      <dt>历史背景</dt><dd>1952 年 10 月 12 日，邱少云牺牲时 26 岁；后被追记特等功、追授"一级英雄"，并被追认为中国共产党党员。</dd>
+      <dt>主要内容</dt><dd>潜伏 → 烈火焚身 → <b>纹丝不动壮烈牺牲</b> → 冲锋报仇（20 分钟歼敌）。</dd>
+      <dt>中心思想</dt><dd>歌颂邱少云<b>顾全大局、严守纪律、不惜牺牲</b>的钢铁意志。</dd>
+      <dt>写法要点</dt><dd>以<b>"我"的心理活动</b>侧面烘托；"千斤巨石"喻其纹丝不动。</dd>
+      <dt>关键句</dt><dd>直到最后一息，也没挪动一寸地方，没发出一声呻吟。</dd>
     </dl>
-    <div class="key-line">关键句：直到最后一息，也没挪动一寸地方，没发出一声呻吟。</div>
   </div>
-</section>
 
-<!-- ========== 第二部分：字词大盘点 ========== -->
-<section id="part2">
-  <div class="sec-head">
-    <span class="sec-num">二</span>
-    <div>
-      <h2>字词大盘点</h2>
-      <div class="en">VOCABULARY</div>
+  <div class="unit-band"><b>文言文复习 · 传统文化</b>　｜　《伯牙鼓琴》（六上）·《陈太丘与友期行》（七上，拓展衔接）</div>
+
+  <!-- 伯牙鼓琴 -->
+  <div class="card lesson wenyan">
+    <div class="lesson-top">
+      <span class="lesson-no">文言文 ①</span><h3>伯牙鼓琴</h3>
+      <span class="meta">选自《<b>吕氏春秋·本味</b>》 ｜ 六上课文 ｜ 成语：高山流水、知音难觅</span>
     </div>
+    <div class="orig">伯牙鼓琴，锺子期听之。方鼓琴而志在太山，锺子期曰："善哉乎鼓琴，巍巍乎若太山。"少选之间而志在流水，锺子期又曰："善哉乎鼓琴，汤汤乎若流水。"锺子期死，伯牙破琴绝弦，终身不复鼓琴，以为世无足复为鼓琴者。</div>
+    <dl class="blocks">
+      <dt>故事内容</dt><dd>伯牙弹琴，志在太山、流水，锺子期都能从琴声中听出；锺子期死后，伯牙破琴绝弦、终身不弹。</dd>
+      <dt>中心思想</dt><dd>表现朋友间<b>心意相通、相互理解</b>的真挚情谊，告诉人们<b>知音难觅，要珍惜知音</b>。</dd>
+      <dt>重点字词</dt><dd>鼓＝弹；志＝心志、情志；善哉＝好啊；巍巍＝高大；少选＝一会儿；汤汤 shāng shāng＝水大急；足＝值得。</dd>
+      <dt>易错点</dt><dd><b>锺</b>子期不写"钟"；<b>太山</b>不写"泰山"；汤汤读 shāng。</dd>
+    </dl>
   </div>
 
-  <div class="card">
-    <h3>高频会写字 · 读写提醒</h3>
-    <div class="table-wrap">
-    <table>
-      <caption>各课最易考、最易写错的字（完整写字表以课本为准）</caption>
-      <tr><th>课次</th><th>字（读音）</th><th>书写 / 辨析提醒</th></tr>
-      <tr><td>草原</td><td><b>毯 tǎn</b>、陈 chén、裳 shang、虹 hóng、蹄 tí、腐 fǔ、稍 shāo、微 wēi</td><td>"毯"半包围，里面是两个"火"；"裳"下部是"衣"不是"衣＋口"；"微"中间是"𠂊＋一＋几"，别漏中间一横。</td></tr>
-      <tr><td>丁香结</td><td><b>幽 yōu</b>、雅 yǎ、案 àn、拙 zhuō、薄 bó、糊 hú、蕾 lěi、襟 jīn、恍 huǎng</td><td>"幽"笔顺先写中间竖；"薄"草字头，右下部是"溥"；"拙"读 zhuō（笨拙），不读 zhuó。</td></tr>
-      <tr><td>诗词三首</td><td><b>德 dé、鹊 què、蝉 chán</b></td><td>"德"右边"心"上<b>有一横不能漏</b>；"鹊"左昔右鸟，与"雀"区分。</td></tr>
-      <tr><td>七律·长征</td><td><b>崖 yá、渡 dù、索 suǒ</b></td><td>"崖"山字头（山崖），与"涯（天涯）"区分；"渡"三点水（渡江），与"度（欢度）"区分。</td></tr>
-      <tr><td>狼牙山五壮士</td><td><b>寇 kòu、副 fù、榴 liú、贯 guàn、棋 qí、悬 xuán、沸 fèi、涧 jiàn、雹 báo、屹 yì、悦 yuè、屈 qū</b></td><td>"寇"与"冠"区分；"副"是"畐＋刂"（副手），与"幅（条幅）"区分；"雹"读 báo 不读 páo；"屹"读 yì 不读 qì。</td></tr>
-      <tr><td>开国大典</td><td><b>政 zhèng、宾 bīn、盏 zhǎn、栏 lán、汇 huì、爆 bào、宣 xuān、帜 zhì、阅 yuè、制 zhì、坦 tǎn、距 jù、隆 lóng、射 shè</b></td><td>"盏"下部是"皿"；"爆"右下是"氺"；"隆"右边中间有一横；"栏"木字旁与"拦（阻拦）"区分。</td></tr>
-      <tr><td>我的战友邱少云</td><td><b>蔽 bì、伪 wěi、搜 sōu、摧 cuī、熄 xī</b></td><td>"蔽"草字头下部是"敝"；"伪"读 wěi 不读 wèi；"歼 jiān"（会认）不读 qiān；"蜷 quán"（会认）不读 juǎn。</td></tr>
-    </table>
+  <!-- 陈太丘 -->
+  <div class="card lesson wenyan">
+    <div class="lesson-top">
+      <span class="lesson-no">文言文 ②</span><h3>陈太丘与友期行</h3>
+      <span class="meta">选自《<b>世说新语·方正</b>》 ｜ 刘义庆编 ｜ 七上课文（拓展）</span>
     </div>
+    <div class="orig">陈太丘与友期行，期日中。过中不至，太丘舍去，去后乃至。元方时年七岁，门外戏。客问元方："尊君在不？"答曰："待君久不至，已去。"友人便怒曰："非人哉！与人期行，相委而去。"元方曰："君与家君期日中。日中不至，则是无信；对子骂父，则是无礼。"友人惭，下车引之。元方入门不顾。</div>
+    <dl class="blocks">
+      <dt>故事内容</dt><dd>友人失约迟到还怒骂其父，七岁元方据理反驳，驳得友人惭愧；元方入门不顾。</dd>
+      <dt>元方"方正"四条</dt><dd>①懂"<b>信</b>"（日中不至则无信）②懂"<b>礼</b>"（对子骂父则无礼）③辩驳<b>有理有据、落落大方</b>④"<b>入门不顾</b>"维护父亲与自己的尊严。</dd>
+      <dt>重点字词</dt><dd>期＝约定；舍去＝丢下离开；不 fǒu＝同"否"；委＝舍弃；引＝拉；顾＝回头看。</dd>
+      <dt>中心</dt><dd>赞扬元方<b>懂信识礼、刚正不阿</b>；告诫人们做人要守信用、讲礼貌。</dd>
+    </dl>
   </div>
 
-  <div class="card">
-    <h3>多音字汇总</h3>
-    <div class="table-wrap">
-    <table>
-      <caption>结合课文语境记准读音</caption>
-      <tr><th>字</th><th>读音①（例词）</th><th>读音②（例词）</th></tr>
-      <tr><td>宿</td><td><span class="py">sù</span> 宿建德江、住宿</td><td><span class="py">xiǔ</span> 半宿　｜　<span class="py">xiù</span> 星宿</td></tr>
-      <tr><td>泊</td><td><span class="py">bó</span> 停泊、泊烟渚</td><td><span class="py">pō</span> 湖泊、血泊</td></tr>
-      <tr><td>卷</td><td><span class="py">juǎn</span> 卷地风来、卷起</td><td><span class="py">juàn</span> 试卷、手不释卷</td></tr>
-      <tr><td>散</td><td><span class="py">sàn</span> 散步、忽吹散</td><td><span class="py">sǎn</span> 散文、散漫</td></tr>
-      <tr><td>薄</td><td><span class="py">bó</span> 单薄、薄雾</td><td><span class="py">báo</span> 薄饼、薄纸　｜　<span class="py">bò</span> 薄荷</td></tr>
-      <tr><td>弹</td><td><span class="py">dàn</span> 手榴弹、子弹</td><td><span class="py">tán</span> 弹琴、弹簧</td></tr>
-      <tr><td>蔓</td><td><span class="py">màn</span> 蔓延</td><td><span class="py">wàn</span> 瓜蔓儿　｜　<span class="py">mán</span> 蔓菁</td></tr>
-      <tr><td>奔</td><td><span class="py">bēn</span> 奔赴、奔跑</td><td><span class="py">bèn</span> 投奔、直奔（目标）</td></tr>
-    </table>
+  <div class="unit-band"><b>整本书阅读 ·《童年》</b>　｜　六上"快乐读书吧"必读：笑与泪，经历与成长</div>
+
+  <div class="card lesson">
+    <div class="lesson-top">
+      <span class="lesson-no">整本书</span><h3>童年</h3>
+      <span class="meta">作者：<b>高尔基</b>（苏联）｜ 自传体三部曲第一部：《童年》《在人间》《我的大学》</span>
     </div>
-  </div>
-
-  <div class="card">
-    <h3>四字词语 · 必会听写</h3>
-    <div class="chips">
-      <span class="chip">一碧千里</span>
-      <span class="chip">翠色欲流</span>
-      <span class="chip">群马疾驰</span>
-      <span class="chip">襟飘带舞</span>
-      <span class="chip">孤芳自赏</span>
-      <span class="chip">断断续续</span>
-      <span class="chip">全神贯注</span>
-      <span class="chip">斩钉截铁</span>
-      <span class="chip">热血沸腾</span>
-      <span class="chip">居高临下</span>
-      <span class="chip">粉身碎骨</span>
-      <span class="chip">屹立不倒</span>
-      <span class="chip">昂首挺胸</span>
-      <span class="chip">坚强不屈</span>
-      <span class="chip">惊天动地</span>
-      <span class="chip">气壮山河</span>
-      <span class="chip">排山倒海</span>
-      <span class="chip">迎风招展</span>
-      <span class="chip">四面八方</span>
-      <span class="chip">五颜六色</span>
-      <span class="chip">纹丝不动</span>
-      <span class="chip">漫山遍野</span>
-      <span class="chip">满腔怒火</span>
-    </div>
-  </div>
-
-  <div class="card">
-    <h3>词语理解（自测：先解释，再点开核对）</h3>
-    <details class="quiz"><summary><span class="q-tag">草原</span>一碧千里 · 翠色欲流</summary><div class="ans"><p><span class="key">一碧千里</span>：放眼望去，全是碧绿的颜色，形容草原辽阔碧绿。<span class="key">翠色欲流</span>：翠绿的颜色好像要流淌下来，形容青草鲜嫩、绿到极点。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">长征</span>等闲 · 逶迤 · 磅礴</summary><div class="ans"><p><span class="key">等闲</span>：平常、寻常（"只等闲"＝只看作平平常常的事）。<span class="key">逶迤（wēi yí）</span>：弯弯曲曲延续不绝。<span class="key">磅礴（páng bó）</span>：气势盛大。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">狼牙山</span>斩钉截铁 · 居高临下 · 屹立</summary><div class="ans"><p><span class="key">斩钉截铁</span>：比喻说话办事坚决果断，毫不犹豫。<span class="key">居高临下</span>：处在高处俯视下面，形容处于有利地势。<span class="key">屹立</span>：像山峰一样高耸而稳固地立着，比喻坚定不可动摇。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">开国大典</span>排山倒海 · 瞻仰 · 肃立</summary><div class="ans"><p><span class="key">排山倒海</span>：推开高山、翻倒大海，形容力量强、声势大。<span class="key">瞻仰</span>：恭敬地看（多用于与逝者或庄重事物有关的场合）。<span class="key">肃立</span>：恭敬庄严地站着。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">邱少云</span>潜伏 · 伪装 · 揳入</summary><div class="ans"><p><span class="key">潜伏</span>：隐藏、埋伏。<span class="key">伪装</span>：借助东西遮盖掩藏，使敌人看不出真相。<span class="key">揳（xiē）入</span>：把楔子或钉子插进去；课文指 391 高地像毒牙一样插进我军阵地。</p></div></details>
-  </div>
-</section>
-
-<!-- ========== 第三部分：分课练习 ========== -->
-<section id="part3">
-  <div class="sec-head">
-    <span class="sec-num">三</span>
-    <div>
-      <h2>分课练习</h2>
-      <div class="en">EXERCISES BY LESSON</div>
-    </div>
-  </div>
-  <p class="self-test-hint">📝 用法：先在纸上或心里作答，再点开核对参考答案。打印时答案会自动全部显示。</p>
-
-  <!-- 第1课练习 -->
-  <div class="card">
-    <h3>第 1 课《草原》</h3>
-    <details class="quiz"><summary><span class="q-tag">理解</span>"羊群一会儿上了小丘，一会儿又下来，走在哪里都像给无边的绿毯绣上了白色的大花。"这句话好在哪里？</summary><div class="ans"><p>运用<b>比喻</b>：把草原比作"无边的绿毯"，把羊群比作"白色的大花"；一个"绣"字写得极精巧，生动写出草原的<b>辽阔碧绿和羊群的灵动可爱</b>，字里行间流露出作者的喜爱与赞叹。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">理解</span>课文结尾"蒙汉情深何忍别，天涯碧草话斜阳"表达了怎样的感情？在全文起什么作用？</summary><div class="ans"><p>意思：蒙汉两族人民情谊深厚，哪里忍心分别；大家站在夕阳下无边的碧草间，倾诉着惜别之情。<b>直抒胸臆</b>，表达蒙汉人民亲如一家、依依惜别的深情；<b>点明中心、收束全文</b>。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">运用</span>课文哪些地方让你"从所读内容想开去"？请联系生活写一例。</summary><div class="ans"><p>示例：读到草原"空气清鲜、天空明朗""既使人惊叹，又叫人舒服"，我联想到自己站在海边看辽阔大海时的心情——一样的开阔、舒畅；也理解了老舍先生为何把草原美景与对蒙古族人民的热爱写在一起，<b>景美人更亲</b>。（能联系自身体验、言之有物即可）</p></div></details>
-  </div>
-
-  <!-- 第2课练习 -->
-  <div class="card">
-    <h3>第 2 课《丁香结》</h3>
-    <details class="quiz"><summary><span class="q-tag">理解</span>作者为什么把丁香花苞称为"丁香结"？</summary><div class="ans"><p>两层原因：①<b>外形</b>——丁香花苞圆圆的、鼓鼓的，恰如衣襟上的盘花扣；②<b>诗意</b>——古人诗句常用丁香结象征解不开的愁怨（"丁香空结雨中愁"）。作者由花的外形联想到生活中不顺心的事。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">理解</span>结合生活实际，说说你对"结，是解不完的；人生中的问题也是解不完的，不然，岂不太平淡无味了吗？"的理解。</summary><div class="ans"><p>人生不可能一帆风顺，困难、烦恼总是接连不断；<b>正因为不断遇到问题又不断解决问题，生活才充实而多彩</b>。我们应当用乐观豁达的态度面对挫折。例：一次考试失利是一个"结"，找出原因、努力赶上后，反而收获了成长。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">写法</span>课文前半部分写丁香花，后半部分写丁香结，这样安排有什么好处？</summary><div class="ans"><p>先极写丁香花的<b>美</b>（色、形、味），再笔锋一转写"结"，由景入理、<b>托物言志</b>；前面的喜爱为后面的感悟作铺垫，使"人生需要豁达"的道理说得自然、不生硬。</p></div></details>
-  </div>
-
-  <!-- 第3课练习 -->
-  <div class="card">
-    <h3>第 3 课《古诗词三首》</h3>
-    <details class="quiz"><summary><span class="q-tag">理解</span>"野旷天低树，江清月近人"描绘了怎样的景色？为什么能表达诗人的"愁"？</summary><div class="ans"><p>原野空旷，远天仿佛低于树木；江水清澈，水中月影好像主动靠近舟中人。诗人<b>以空旷苍茫之景反衬自身的孤寂</b>，唯有月影可近可亲，更显出流落异乡、无人亲近的新愁。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">炼字</span>"卷地风来忽吹散"中的"忽"字用得好在哪里？</summary><div class="ans"><p>"忽"是忽然之意，写出夏日天气<b>变化之快</b>——狂风转眼把暴雨吹散，与前两句的黑云白雨形成强烈转折；也传达出诗人由骤雨的惊愕转为雨过天晴的<b>惊喜</b>之情。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">理解</span>"稻花香里说丰年，听取蛙声一片"是谁在"说丰年"？这样写有什么妙处？</summary><div class="ans"><p>是<b>蛙声</b>仿佛在争说丰年，词人用<b>拟人</b>手法，把群蛙写得像在欢庆丰收；同时调动<b>嗅觉（稻花香）和听觉（蛙声）</b>，表现乡村夏夜的生机盎然和词人对丰收在望的喜悦。</p></div></details>
-  </div>
-
-  <!-- 第4课练习 -->
-  <div class="card">
-    <h3>第 4 课《七律·长征》</h3>
-    <details class="quiz"><summary><span class="q-tag">理解</span>"五岭逶迤腾细浪，乌蒙磅礴走泥丸"运用了什么修辞？表达了什么？</summary><div class="ans"><p>运用<b>比喻和夸张</b>：把绵延的五岭看作翻腾的细小波浪，把雄伟的乌蒙山看作滚动的小泥丸。极大的困难在红军眼中却极其渺小，表现红军<b>藐视困难、顶天立地</b>的英雄气概。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">理解</span>"金沙水拍云崖暖，大渡桥横铁索寒"中"暖""寒"各指什么？</summary><div class="ans"><p><b>暖</b>：指红军巧渡金沙江后欢快、喜悦的心情（不战而胜，心里暖洋洋）；<b>寒</b>：写出飞夺泸定桥时铁索裸露、战斗惨烈，令人心惊胆寒。一暖一寒，<b>对比</b>中见红军的智勇与牺牲。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">默写</span>请写出全诗的总起句和总结句。</summary><div class="ans"><p>总起句：<b>红军不怕远征难，万水千山只等闲。</b>　总结句：<b>更喜岷山千里雪，三军过后尽开颜。</b>（"尽开颜"写胜利在望的喜悦，呼应"只等闲"。）</p></div></details>
-  </div>
-
-  <!-- 第5课练习 -->
-  <div class="card">
-    <h3>第 5 课《狼牙山五壮士》</h3>
-    <details class="quiz"><summary><span class="q-tag">理解</span>课文为什么用"狼牙山五壮士"作题目，而不是"五战士"？</summary><div class="ans"><p>"战士"是普通称谓；"壮士"特指<b>豪壮勇敢、不惜牺牲生命</b>的人。五壮士本来已完成掩护任务，可以追上大部队，却为了把敌人引开，主动把敌人带上绝路，最后跳崖。改"战士"为"壮士"，突出他们<b>崇高壮烈、视死如归</b>。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">写法</span>以"痛击敌人"一段为例，说说课文是怎样运用点面结合的。</summary><div class="ans"><p><b>面</b>：整体写六班五个战士一边诱敌上山、一边利用险要地形痛击追上来的敌人；<b>点</b>：具体写班长马宝玉沉着指挥、葛振林打一枪就大吼、宋学义掷手榴弹总要把胳膊抡一个圈、胡德林和胡福才把脸绷得紧紧的。点面结合，<b>群体形象与个体风采都鲜明</b>。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">理解</span>五壮士为什么要"引上绝路"？跳下悬崖前他们"脸上露出胜利的喜悦"，这"喜悦"来自哪里？</summary><div class="ans"><p>为了不让敌人发现群众和连队主力的去向，他们故意把敌人引向棋盘陀绝路。"喜悦"来自：<b>群众和连队主力已经安全转移，他们又歼灭了大量敌人，圆满完成了任务</b>——个人虽将牺牲，但革命事业保住了，这是革命者的幸福。</p></div></details>
-  </div>
-
-  <!-- 第6课练习 -->
-  <div class="card">
-    <h3>第 6 课《开国大典》</h3>
-    <details class="quiz"><summary><span class="q-tag">梳理</span>开国大典写了哪几个场面？课文是按什么顺序写的？</summary><div class="ans"><p>四个场面：<b>群众入场 → 举行典礼 → 阅兵式 → 群众游行</b>。课文按大典进行的<b>时间顺序</b>（早上六点钟—下午三点整—傍晚—晚上九点半）组织材料，条理清楚。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">理解</span>"这庄严的宣告，这雄伟的声音……传到长城内外，传到大江南北，使全中国人民的心一齐欢跃起来。"这句话好在哪里？</summary><div class="ans"><p>运用<b>反复</b>（"庄严的宣告、雄伟的声音"重复）和<b>实虚结合</b>：实写广场三十万人欢呼，虚写声音通过广播传遍全国；"长城内外、大江南北"指祖国各地，写出新中国成立的消息让<b>全国人民无比欢腾、自豪</b>。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">理解</span>结尾"两股红流分头向东城、西城的街道流去，光明充满了整个北京城"有什么深刻含义？</summary><div class="ans"><p>"红流"比喻举着火把、灯笼的游行队伍，也象征党领导下的革命力量。"光明"一语双关：①灯笼火把照亮了北京城；②<b>新中国成立使北京、使全国摆脱黑暗统治，迎来光明和希望</b>。</p></div></details>
-  </div>
-
-  <!-- 第7课练习 -->
-  <div class="card">
-    <h3>第 7 课《我的战友邱少云》</h3>
-    <details class="quiz"><summary><span class="q-tag">理解</span>邱少云身上着火后，他自己和"我"其实都有办法救他，为什么都没有救？</summary><div class="ans"><p>他只要跳出来就地打几个滚就能灭火；"我"跳过去扯掉棉衣也能救他。但这样一来就会被山头敌人发觉，<b>整个班、整个潜伏部队都会遭受重大损失，作战计划全部落空</b>。为了全局胜利，个人的生被放在了后面。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">写法</span>课文用大量笔墨写"我"的心理活动，有什么作用？</summary><div class="ans"><p>"我的心绷得紧紧的""心像刀绞一般""不敢朝他那儿看，又忍不住不看"——通过<b>"我"的紧张、担心、痛苦</b>，侧面烘托火势之猛、痛苦之巨，更反衬出邱少云<b>超人的意志力和顾全大局、严守纪律的崇高精神</b>，比直接写"他很坚强"更震撼人心。</p></div></details>
-    <details class="quiz"><summary><span class="q-tag">品析</span>"为了整个班……邱少云像千斤巨石一般，趴在火堆里一动也不动。"这句话中的比喻好在哪里？</summary><div class="ans"><p>把烈火中的邱少云比作<b>千斤巨石</b>，写出他<b>稳如磐石、纹丝不动</b>的姿态；巨石的"重、稳、坚"形象表现他钢铁般的意志和为了胜利不惜牺牲的决心，与前面三个"为了"呼应，点明精神的力量源泉。</p></div></details>
+    <dl class="blocks">
+      <dt>主人公</dt><dd><b>阿廖沙</b>（高尔基乳名）。三岁丧父，随母亲投奔外祖父家，在外祖父染坊长大，母亲病逝后"到人间去"谋生。</dd>
+      <dt>主要人物</dt><dd><b>外祖母</b>：慈祥善良、乐观坚强，像一盏明灯，是阿廖沙最亲近的保护者；<b>外祖父</b>：吝啬残暴、有时又流露善心；小茨冈（乐观能干）、格里戈里（忠厚老匠）、"好事情"（进步知识分子）。</dd>
+      <dt>全书主旨</dt><dd>以阿廖沙童年视角揭露 19 世纪末俄国底层社会的黑暗，又歌颂<b>善良与知识如何引导一个孩子在苦难中坚强成长</b>——黑暗中始终有光。</dd>
+      <dt>艺术特色</th＞<dd>第一人称自传体；多视角写人（人物复杂立体）；儿童视角与成人思考结合；环境描写渲染气氛。</dd>
+    </dl>
+    <div class="key-line">考点：阿廖沙是一个<b>坚强、勇敢、正直、充满爱心、渴求知识</b>的孩子；外祖母是他"童年中最珍贵"的人。</div>
   </div>
 </section>
 
@@ -480,83 +350,109 @@
     <span class="sec-num">四</span>
     <div>
       <h2>阶段综合测试卷</h2>
-      <div class="en">TEST PAPER</div>
+      <div class="en">TEST PAPER · 100 分</div>
     </div>
   </div>
 
   <div class="card paper-card">
-    <p class="paper-title">六年级上册语文阶段测试（第 1-7 课）</p>
-    <p class="paper-info">满分 100 分　｜　建议用时 60 分钟　｜　考查范围：开学至《我的战友邱少云》</p>
+    <p class="paper-title">六年级上册语文阶段综合测试卷</p>
+    <p class="paper-info">（课文＋文言文＋《童年》＋课外记叙文 ｜ 满分 100 分 ｜ 时间 90 分钟）</p>
 
     <!-- 一 -->
-    <div class="qgroup-title">一、看拼音写词语（10 分）</div>
-    <p class="exam-q"><span class="n">1.</span> lǜ tǎn（　　　）　　yī shang（　　　）　　dān bó（　　　）　　huā lěi（　　　）　　xuán yá（　　　）</p>
-    <p class="exam-q"><span class="n">2.</span> shǒu liú dàn（　　　　）　　fèi téng（　　　）　　qí zhì（　　　）　　wěi zhuāng（　　　）　　jiān miè（　　　）</p>
+    <p class="qgroup-title">一、看拼音，写词语。（10 分）</p>
+    <p class="exam-q"><span class="n">1.</span> dì tǎn（　　　）　　 yōu yǎ（　　　）　　 xuān gào（　　　）　　 fèi téng（　　　）　　 bào fā（　　　）</p>
+    <p class="exam-q"><span class="n">2.</span> jiān miè（　　　）　　 qí zhì（　　　）　　 xuán yá（　　　）　　 wén sī bù dòng（　　　　　）　　 zhǎn dīng jié tiě（　　　　　）</p>
 
     <!-- 二 -->
-    <div class="qgroup-title">二、选择题（12 分，每题 3 分）</div>
-    <p class="exam-q"><span class="n">1.</span>下列加点字读音全部正确的一组是（　）<br>
-    A. 笨拙（zhuó）　冰雹（páo）　歼灭（qiān）<br>
-    B. 逶迤（wēi yí）　磅礴（páng bó）　屹立（yì）<br>
-    C. 岷山（mǐn）　泥丸（wán）　山坳（ǎo）</p>
-    <p class="exam-q"><span class="n">2.</span>下列词语书写完全正确的一组是（　）<br>
-    A. 一碧千里　翠色欲流　斩钉截铁　&nbsp;&nbsp;B. 居高邻下　粉身碎骨　排山到海　&nbsp;&nbsp;C. 全神惯注　热血费腾　纹丝不动</p>
-    <p class="exam-q"><span class="n">3.</span>"金沙水拍云崖暖"的"暖"和"大渡桥横铁索寒"的"寒"运用的表现手法是（　）<br>
-    A. 比喻　　　B. 拟人　　　C. 对比</p>
-    <p class="exam-q"><span class="n">4.</span>《狼牙山五壮士》《开国大典》写场面时共同运用的方法是（　）<br>
-    A. 首尾呼应　　B. 点面结合　　C. 托物言志</p>
+    <p class="qgroup-title">二、选择正确答案，将序号填在括号里。（12 分）</p>
+    <p class="exam-q"><span class="n">1.</span>下列加点字读音完全正确的一组是（　　）<br>
+    　A. 勾勒（lèi）　单薄（báo）　 B. 汤汤（tāng）乎　蜷（juǎn）缩<br>
+    　C. 岷（mín）山　抡（lūn）起　 D. 笨拙（zhuó）　迂回（yú）</p>
+    <p class="exam-q"><span class="n">2.</span>下列词语书写完全正确的一组是（　　）<br>
+    　A. 一碧千里　排山到海　 B. 斩钉截铁　居高临下　 C. 粉身粹骨　迎风招展　 D. 纹丝不动　千均一发</p>
+    <p class="exam-q"><span class="n">3.</span>"锺子期死，伯牙破琴绝弦"中"绝"的意思是（　　）<br>
+    　A. 极、最　 B. 独一无二的　 C. 断绝，弄断　 D. 走不通的</p>
+    <p class="exam-q"><span class="n">4.</span>《狼牙山五壮士》《开国大典》共同运用的主要场面写法是（　　）<br>
+    　A. 借景抒情　 B. 点面结合　 C. 前后照应　 D. 托物言志</p>
+    <p class="exam-q"><span class="n">5.</span>下列作品、作者搭配有误的一项是（　　）<br>
+    　A.《草原》——老舍　 B.《丁香结》——宗璞　 C.《童年》——高尔基　 D.《七律·长征》——朱德</p>
+    <p class="exam-q"><span class="n">6.</span>"路转溪桥忽见"中"见"的读音和意思是（　　）<br>
+    　A. jiàn，看见　 B. xiàn，同"现"，出现　 C. jiàn，遇见　 D. xiàn，看见</p>
 
     <!-- 三 -->
-    <div class="qgroup-title">三、词句练习（18 分）</div>
-    <p class="exam-q"><span class="n">1.</span>给多音字选择正确读音（填序号）：①sǎn　②sàn<br>
-    　散（　）步　　散（　）文　　松散（　）　　散（　）会</p>
-    <p class="exam-q"><span class="n">2.</span>按要求写句子：<br>
-    　(1) 羊群走在草原上。（改为比喻句）<br>
-    　(2) 这庄严的宣告，使全场三十万人一齐欢呼起来。（缩句）<br>
-    　(3) 仿写排比句：为了整个班，为了整个潜伏部队，为了这次战斗的胜利，邱少云像千斤巨石一般趴在火堆里。</p>
-    <p class="exam-q"><span class="n">3.</span>判断下列说法，对的打"√"，错的打"×"：<br>
-    　(1)《丁香结》一文告诉我们人生愁恨无尽，要学会逃避。（　）<br>
-    　(2)《宿建德江》和《西江月》都写到"月"，但一愁一喜。（　）<br>
-    　(3) 开国大典上，毛主席宣告"中华人民共和国中央人民政府今天成立了"。（　）</p>
+    <p class="qgroup-title">三、按要求完成句子练习。（13 分）</p>
+    <p class="exam-q"><span class="n">1.</span>这是英雄的中国人民坚强不屈的声音！（缩句，2 分）</p>
+    <p class="exam-q"><span class="n">2.</span>小明对小红说："明天我要和爸爸一起去看电影，不能和你一起去图书馆了。"（改为转述句，3 分）</p>
+    <p class="exam-q"><span class="n">3.</span>那里的天比别处的更可爱，空气是那么清鲜，天空是那么明朗。（用加点的"那么……那么……"仿写一句，4 分）</p>
+    <p class="exam-q"><span class="n">4.</span>用修改符号在原句上修改：狼牙山五壮士不但牺牲了自己，但是掩护了大部队和群众转移。（4 分）</p>
 
     <!-- 四 -->
-    <div class="qgroup-title">四、根据课文内容填空（15 分）</div>
-    <p class="exam-q"><span class="n">1.</span>蒙汉情深何忍别，<span class="blanks">＿＿＿＿＿＿＿</span>。</p>
-    <p class="exam-q"><span class="n">2.</span><span class="blanks">＿＿＿＿＿＿</span>，江清月近人。</p>
-    <p class="exam-q"><span class="n">3.</span>黑云翻墨未遮山，<span class="blanks">＿＿＿＿＿＿＿</span>。</p>
-    <p class="exam-q"><span class="n">4.</span>稻花香里说丰年，<span class="blanks">＿＿＿＿＿＿＿</span>。</p>
-    <p class="exam-q"><span class="n">5.</span>红军不怕远征难，<span class="blanks">＿＿＿＿＿＿＿</span>。</p>
-    <p class="exam-q"><span class="n">6.</span>五岭逶迤腾细浪，<span class="blanks">＿＿＿＿＿＿＿</span>。</p>
-    <p class="exam-q"><span class="n">7.</span>更喜岷山千里雪，<span class="blanks">＿＿＿＿＿＿＿</span>。</p>
+    <p class="qgroup-title">四、根据课文内容填空。（15 分）</p>
+    <p class="exam-q"><span class="n">1.</span>《七律·长征》中总领全诗的诗句是：<span class="blanks">　　　　　　，　　　　　　</span>。诗中"金沙水拍云崖<span class="blanks">　</span>，大渡桥横铁索<span class="blanks">　</span>"，一暖一寒形成对比。</p>
+    <p class="exam-q"><span class="n">2.</span>《宿建德江》中借景抒情的名句是：野旷<span class="blanks">　　　</span>，江清<span class="blanks">　　　</span>。《西江月》中以蛙声写丰年的句子是：稻花香里说丰年，<span class="blanks">　　　　　　</span>。</p>
+    <p class="exam-q"><span class="n">3.</span>锺子期死，伯牙<span class="blanks">　　　</span>，终身不复鼓琴，以为<span class="blanks">　　　　　　　　　</span>。</p>
+    <p class="exam-q"><span class="n">4.</span>《童年》的主人公是<span class="blanks">　　　</span>，书中被比作"一盏明灯"的人是<span class="blanks">　　　</span>。</p>
 
-    <!-- 五 -->
-    <div class="qgroup-title">五、课内阅读（20 分）</div>
-    <p class="exam-q">阅读《我的战友邱少云》片段，完成练习：<br>
-    <i>　　我的心绷得紧紧的。这怎么忍受得了呢？我担心这个年轻的战士会突然跳起来，或者突然叫起来。我不敢朝他那儿看，不忍眼巴巴地看着我的战友活活地烧死。但是我忍不住不看，我盼望出现什么奇迹，火突然熄灭了。我的心像刀绞一般，泪水迷糊了我的眼睛。</i></p>
-    <p class="exam-q"><span class="n">1.</span>这段话主要运用了什么描写方法？写出了"我"怎样的心情？（6 分）</p>
-    <p class="exam-q"><span class="n">2.</span>"我不敢朝他那儿看"与"我忍不住不看"矛盾吗？为什么？（6 分）</p>
-    <p class="exam-q"><span class="n">3.</span>这段话没有直接写邱少云，却同样让我们感到震撼。这样写有什么好处？（8 分）</p>
+    <!-- 五 课外阅读 -->
+    <p class="qgroup-title">五、课外阅读。（20 分）</p>
+    <div class="read-passage">
+      <p class="pt">修车铺的灯光</p>
+      <p>　　初冬的傍晚，天暗得格外早。我骑着自行车往家赶，刚拐进巷口，"咔嚓"一声，车链子掉了。我蹲在路边摆弄了半天，满手油污，车链子却像一条不听话的泥鳅，怎么也挂不上去。风一阵阵吹来，我又冷又急，鼻尖都酸了。</p>
+      <p>　　就在这时，巷口那间小修车铺的门"吱呀"一声开了，昏黄的灯光从门缝里淌出来，像在地上铺了一层薄薄的暖金。"孩子，车坏了吧？推过来我看看。"修车的张爷爷探出头，笑着朝我招手。</p>
+      <p>　　张爷爷的手上布满老茧，指缝里都是洗不净的油泥。他接过车子，三两下把车架好，左手一拨、右手一挂，"咔"的一声，车链子服服帖帖地回到了齿轮上。他又转动踏板试了试，这才直起腰，用棉纱擦了擦手。</p>
+      <p>　　"爷爷，多少钱？"我慌忙去摸口袋。"这点小事，要什么钱。"张爷爷摆摆手，"天黑路滑，骑慢点。"我推着车走出几步，回头望去——那间小小的修车铺还亮着灯，灯光不亮，却把整条巷子都照得暖融融的。</p>
+      <p>　　后来我常想，那天让我记住的，也许并不是修好了的自行车，而是那扇开着的门、那盏亮着的灯，和一位陌生老人随手递来的善意。它让我懂得：<b>给别人的心里点一盏灯，自己的心里也会是亮的</b>。</p>
+    </div>
+    <p class="exam-q"><span class="n">1.</span>联系上下文，解释下面的词语。（4 分）<br>服服帖帖：<span class="blanks">　　　　　　　　　　　　　　　　　　　　　　　　　</span></p>
+    <p class="exam-q"><span class="n">2.</span>短文画线句"昏黄的灯光从门缝里淌出来，像在地上铺了一层薄薄的暖金"运用了什么修辞手法？有什么作用？（5 分）</p>
+    <p class="exam-q"><span class="n">3.</span>用简洁的语言概括短文的主要内容。（5 分）</p>
+    <p class="exam-q"><span class="n">4.</span>结合短文结尾画线句，联系生活实际，写写你对这句话的理解。（6 分）</p>
 
-    <!-- 六 -->
-    <div class="qgroup-title">六、表达与运用（25 分）</div>
-    <p class="exam-q"><span class="n">1.</span>口语交际（5 分）：学习了第二单元，请用两三句话向同学推荐一位你最敬佩的革命英雄，并说明理由。</p>
-    <p class="exam-q"><span class="n">2.</span>习作（20 分）：本单元我们感受了阅兵式、运动会等多彩的活动。请你运用<b>点面结合</b>的方法，写一次自己亲身经历的活动（如运动会、升旗仪式、文艺汇演），写清活动的过程和当时的感受。题目自拟，350 字左右。</p>
+    <!-- 六 习作 -->
+    <p class="qgroup-title">六、习作。（30 分）</p>
+    <p class="exam-q">微笑、诚信、梦想、旅行、种花、阅读、运动、创意……是什么让你的生活变得更加美好？请以"<b>＿＿＿让生活更美好</b>"为题，先把题目补充完整，再写一篇记叙文。</p>
+    <p class="exam-q">要求：①写清楚它是怎样影响你的生活的；②选取一两件具体事例，把过程写完整，融入自己的真实感受；③语句通顺，书写工整，不少于 450 字。</p>
   </div>
 
   <!-- 参考答案 -->
   <div class="card">
     <h3>参考答案与评分要点</h3>
-    <details class="quiz" open><summary><span class="q-tag">答案</span>点开核对全部答案（打印时自动显示）</summary><div class="ans">
-      <p><b>一、</b>绿毯　衣裳　单薄　花蕾　悬崖　手榴弹　沸腾　旗帜　伪装　歼灭</p>
-      <p><b>二、</b>1.B　2.A　3.C　4.B</p>
-      <p><b>三、1.</b>②　①　①　②</p>
-      <p><b>　　2.</b>(1) 羊群一会儿上小丘一会儿下来，像给无边的绿毯绣上了白色的大花。　(2) 宣告使人欢呼。　(3) 三个"为了……"句式一致、构成排比即可（例：为了班级荣誉，为了不负汗水，为了不负老师的期望，他冲过了终点线）。</p>
-      <p><b>　　3.</b>(1)×（应豁达面对，不是逃避）　(2)√　(3)√</p>
-      <p><b>四、</b>1.天涯碧草话斜阳　2.野旷天低树　3.白雨跳珠乱入船　4.听取蛙声一片　5.万水千山只等闲　6.乌蒙磅礴走泥丸　7.三军过后尽开颜</p>
-      <p><b>五、1.</b>心理描写；写出"我"担心、焦急、痛苦、矛盾的复杂心情。</p>
-      <p><b>　　2.</b>不矛盾。"不敢看"是因为不忍心眼睁睁看战友被烈火吞噬；"忍不住不看"是因为"我"深切关心战友，盼望出现奇迹。看似矛盾，正反衬出"我"对邱少云深厚的战友情。</p>
-      <p><b>　　3.</b>这是侧面烘托：以"我"极度痛苦、紧张的心理，反衬火势之猛、痛苦之大，更突出邱少云在烈火中一动不动、严守纪律、顾全大局的钢铁意志与崇高精神，含蓄而震撼。</p>
-      <p><b>六、</b>评分要点：口语交际——人物明确、理由能结合其事迹与品质。习作——①有"面"（活动整体场面、气氛）有"点"（典型人物的具体表现），点面结合；②过程清楚、有真情实感；③语句通顺，不少于 300 字。</p>
+
+    <details class="quiz" open><summary><span class="q-tag">一</span>看拼音写词语</summary><div class="ans">
+      <p>地毯　幽雅　宣告　沸腾　爆发　歼灭　旗帜　悬崖　纹丝不动　斩钉截铁。每词 1 分，错一字该词不得分。</p>
+    </div></details>
+
+    <details class="quiz"><summary><span class="q-tag">二</span>选择题</summary><div class="ans">
+      <p>1. C（A 勒 lè、薄 bó；B 汤 shāng、蜷 quán；D 拙 zhuō、迂 yū）　2. B（A 排山倒海；C 粉身碎骨；D 千钧一发）　3. C　4. B　5. D（《七律·长征》作者毛泽东）　6. B。每题 2 分。</p>
+    </div></details>
+
+    <details class="quiz"><summary><span class="q-tag">三</span>句子练习</summary><div class="ans">
+      <p>1. <b>这是声音。</b>（2 分）</p>
+      <p>2. <b>小明对小红说，明天他要和爸爸一起去看电影，不能和小红一起去图书馆了。</b>（3 分；人称、标点正确即可）</p>
+      <p>3. 示例：<b>中秋的月夜是那么宁静，月光是那么温柔。</b>（4 分；句式正确、语意通顺即可）</p>
+      <p>4. 关联词搭配不当，应把"不但……但是……"改为<b>"虽然……但是……"或"宁可……也要……"</b>；更贴合句意的改法："五壮士<b>宁可</b>牺牲自己，<b>也要</b>掩护大部队和群众转移。"（4 分）</p>
+    </div></details>
+
+    <details class="quiz"><summary><span class="q-tag">四</span>课文填空</summary><div class="ans">
+      <p>1. <b>红军不怕远征难，万水千山只等闲</b>；暖、寒。</p>
+      <p>2. <b>天低树；月近人；听取蛙声一片</b>。</p>
+      <p>3. <b>破琴绝弦；世无足复为鼓琴者</b>。</p>
+      <p>4. <b>阿廖沙；外祖母</b>。每空 1 分，错字不得分。</p>
+    </div></details>
+
+    <details class="quiz"><summary><span class="q-tag">五</span>课外记叙文阅读</summary><div class="ans">
+      <p><b>1.</b>服服帖帖：本义是顺从、听话的样子；文中指车链子被张爷爷三两下装好，稳稳当当回到齿轮上，再也不捣乱了。（本义 2 分，文中义 2 分）</p>
+      <p><b>2.</b>运用比喻（1 分），把灯光比作"薄薄的暖金"，生动写出灯光的柔和温暖（2 分）；既烘托冬夜的寒冷，又暗示张爷爷的出现带给"我"希望和温暖，为下文写他热心帮忙作铺垫（2 分）。</p>
+      <p><b>3.</b>初冬傍晚，"我"的自行车掉了链子，又冷又急；修车铺的张爷爷主动招呼"我"，很快把车修好却不收钱；那盏灯光和老人的善意让"我"深受感动、明白要为他人点亮一盏灯。（起因、经过、结果各约 1.5 分，意思对即可）</p>
+      <p><b>4.</b>理解：帮助别人、给别人带去温暖和善意，自己也会收获快乐与内心的光明——善意是相互的（3 分）。能联系自己帮助他人或被他人帮助的具体事例，表达真情实感（3 分）。</p>
+    </div></details>
+
+    <details class="quiz"><summary><span class="q-tag">六</span>习作评分标准（30 分）</summary><div class="ans">
+      <p><b>一类文（26—30 分）：</b>题目补充恰当；能围绕"它怎样让生活更美好"选取一两件具体事例，过程清楚、细节真实，情感自然；语句通顺，分段合理，450 字以上。</p>
+      <p><b>二类文（21—25 分）：</b>内容较具体，中心明确，有真情实感，事例基本完整；语言较通顺，有少量病句或错别字。</p>
+      <p><b>三类文（16—20 分）：</b>能扣题写，但事例笼统、感受不深，或只罗列现象；中心基本明确。</p>
+      <p><b>四类文（15 分及以下）：</b>偏离题意、内容空洞或字数严重不足。</p>
+      <p><b>提示选材：</b>阅读让生活更美好（读书带来的改变）、诚信让生活更美好（一次守诺的经历）、微笑让生活更美好（用微笑化解矛盾）、种花让生活更美好（等待花开的耐心与收获）等。</p>
     </div></details>
   </div>
 </section>
@@ -564,29 +460,237 @@
 </main>
 
 <footer>
-  <div>部编版（统编）语文六年级上册（2024 修订版）· 阶段复习与练习资料</div>
-  <div style="margin-top:6px;">本资料依据教材课文、课下注释及配套教师用书整理，供复习自测使用。</div>
-  <div style="margin-top:6px;">参考来源：
-    <a href="https://m.zxxk.com/soft/59587865.html" target="_blank" rel="noopener noreferrer">开国大典教学课件（学科网）</a>｜
-    <a href="https://www.21cnjy.com/H/26596500.shtml" target="_blank" rel="noopener noreferrer">我的战友邱少云知识点梳理</a>｜
-    <a href="https://basic.nmg.smartedu.cn/" target="_blank" rel="noopener noreferrer">国家中小学智慧教育平台</a>
-  </div>
+  <p>六年级上册语文阶段总复习 · 单文件离线版（课文 7 课＋文言文 2 篇＋整本书《童年》）</p>
+  <p>内容依据统编（部编）教材及教师教学用书整理；课外记叙文《修车铺的灯光》为本资料原创命题。</p>
 </footer>
 
 <script>
-(function(){
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  document.querySelectorAll('nav.toc a[href^="#"]').forEach(function(a){
-    a.addEventListener('click', function(e){
-      var id = a.getAttribute('href').slice(1);
-      var target = document.getElementById(id);
-      if(!target) return;
-      e.preventDefault();
-      target.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'start'});
+  // 打印时自动展开所有自测/答案折叠
+  (function(){
+    var mq = window.matchMedia('print');
+    function expand(yes){
+      document.querySelectorAll('details.quiz').forEach(function(d){
+        if(yes){ if(!d.open) d.setAttribute('data-was-closed','1'); d.open = true; }
+        else if(d.getAttribute('data-was-closed') === '1'){ d.open = false; d.removeAttribute('data-was-closed'); }
+      });
+    }
+    if(mq.addEventListener){ mq.addEventListener('change', function(e){ expand(e.matches); }); }
+    window.addEventListener('beforeprint', function(){ expand(true); });
+    window.addEventListener('afterprint', function(){ expand(false); });
+  })();
+
+  // 页内锚点：拦截默认跳转，平滑滚动到目标板块
+  (function(){
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(e){
+        var id = a.getAttribute('href').slice(1);
+        var target = document.getElementById(id);
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth', block:'start'});
+          history.replaceState(null, '', '#' + id);
+        }
+      });
     });
-  });
-})();
+  })();
 </script>
 
 </body>
 </html>
+<!-- ========== 第三部分：分课练习 ========== -->
+<section id="part3">
+  <div class="sec-head">
+    <span class="sec-num">三</span>
+    <div>
+      <h2>分课练习</h2>
+      <div class="en">PRACTICE BY LESSON</div>
+    </div>
+  </div>
+  <p class="self-test-hint">每课 3 道理解、写法、品析题。先自己作答，再点开核对。</p>
+
+  <div class="card">
+    <h3>第 1 课《草原》</h3>
+    <details class="quiz"><summary><span class="q-tag">理解</span>课文最后一句"蒙汉情深何忍别，天涯碧草话斜阳"表达了怎样的情感？</summary><div class="ans"><p><span class="key">参考答案：</span>蒙古族和汉族人民情谊深厚，谁也不忍心马上分别；夕阳下，大家站在一望无际的碧绿草原上，互相倾诉惜别之情。这句直接抒发了蒙汉两族人民亲如一家、难舍难分的深情。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">品析</span>"羊群一会儿上了小丘，一会儿又下来，走在哪里都像给无边的绿毯绣上了白色的大花。"好在哪里？</summary><div class="ans"><p><span class="key">参考答案：</span>运用比喻，把草原比作"绿毯"、把羊群比作"白色的大花"，一绿一白色彩鲜明；"绣"字写出羊群走动使草原像一幅会动的织锦，生动写出草原的辽阔、柔美与生机。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">写法</span>作者是按什么顺序写《草原》的？"情景交融"体现在哪里？</summary><div class="ans"><p><span class="key">参考答案：</span>按事情发展顺序：草原美景→喜迎远客→主客联欢→依依话别。作者在写景中融入赞美、在叙事中融入情谊，如先写草原一碧千里表达喜爱，再写主客喝酒联欢表达民族团结，景、事、情融为一体。</p></div></details>
+  </div>
+
+  <div class="card">
+    <h3>第 2 课《丁香结》</h3>
+    <details class="quiz"><summary><span class="q-tag">理解</span>"丁香结"有哪两层含义？作者由此悟出什么道理？</summary><div class="ans"><p><span class="key">参考答案：</span>本义指丁香花苞圆圆鼓鼓、恰如衣襟上的盘花扣；象征义指生活中解不开的愁怨和不顺心的事。作者悟出：人生的问题是解不完的，正因为如此，人生才多彩多姿；要以豁达的态度面对生活中的"结"。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">品析</span>"有的宅院里探出半树银妆，星星般的小花缀满枝头。"两个动词好在哪里？</summary><div class="ans"><p><span class="key">参考答案：</span>"探"字用拟人，把丁香花枝写得像顽皮的孩子主动伸出头，充满生机；"缀"字写出小花星星点点、精巧地装饰枝头的样子，写出丁香花的繁密、灵动与可爱。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">写法</span>本文采用了什么写作手法？结合内容简要说明。</summary><div class="ans"><p><span class="key">参考答案：</span>托物言志（借物喻理）。作者先具体描写丁香花的色、形、味，再由雨中的丁香结展开联想，把"结"与人生中的愁怨、难题联系起来，借丁香结表达对人生的豁达认识。</p></div></details>
+  </div>
+
+  <div class="card">
+    <h3>第 3 课《古诗词三首》</h3>
+    <details class="quiz"><summary><span class="q-tag">理解</span>三首诗词表达的情感有什么不同？</summary><div class="ans"><p><span class="key">参考答案：</span>《宿建德江》表达诗人旅途中的孤寂与思乡之愁；《六月二十七日望湖楼醉书》表达对西湖骤雨奇观的惊喜与赞叹；《西江月·夜行黄沙道中》表达乡村夜行的闲适与对丰收在望的喜悦。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">品析</span>"黑云翻墨未遮山，白雨跳珠乱入船"为什么是千古名句？</summary><div class="ans"><p><span class="key">参考答案：</span>用"翻墨"喻黑云、"跳珠"喻白雨，比喻新奇，色彩一黑一白对比强烈；"未遮山"写雨来得快、"跳""乱"写雨点又大又急、蹦跳进船，画面动感十足，逼真再现盛夏暴雨转瞬即至的景象。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">常识</span>《西江月·夜行黄沙道中》是一首词，"西江月"是什么？词和诗有什么不同？</summary><div class="ans"><p><span class="key">参考答案：</span>"西江月"是词牌名，规定词的格式；"夜行黄沙道中"是题目。词又称"长短句"，句子长短不一、须按词牌填写，分上下阕；诗（尤其格律诗）句式整齐。"路转溪桥忽见"的"见"读 xiàn，同"现"。</p></div></details>
+  </div>
+
+  <div class="card">
+    <h3>第 4 课《七律·长征》</h3>
+    <details class="quiz"><summary><span class="q-tag">理解</span>全诗是围绕哪两个字展开的？"只等闲"表现了什么？</summary><div class="ans"><p><span class="key">参考答案：</span>围绕"不怕"展开。"等闲"是平常、寻常的意思；"只等闲"写出红军把跨越万水千山的千难万险只看作平平常常的小事，表现了红军藐视困难、从容不迫的革命乐观主义精神。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">品析</span>"五岭逶迤腾细浪，乌蒙磅礴走泥丸"运用了什么手法？有什么作用？</summary><div class="ans"><p><span class="key">参考答案：</span>运用夸张和比喻，把绵延的五岭看作翻腾的细小波浪，把雄伟的乌蒙山看作脚下滚动的泥丸；以山的巨大反衬红军形象的高大，突出红军征服高山的英雄气概。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">理解</span>"金沙水拍云崖暖，大渡桥横铁索寒"中"暖"和"寒"各指什么？</summary><div class="ans"><p><span class="key">参考答案：</span>"暖"写巧渡金沙江时山崖高耸、江流湍急却顺利渡江后的喜悦与温暖；"寒"写强渡大渡河、飞夺泸定桥时铁索高悬、寒光逼人，令人心惊的惊险残酷。一暖一寒对比，写出两场战斗的不同感受。</p></div></details>
+  </div>
+
+  <div class="card">
+    <h3>第 5 课《狼牙山五壮士》</h3>
+    <details class="quiz"><summary><span class="q-tag">理解</span>课文按怎样的顺序叙述？为什么把"战士"改称"壮士"？</summary><div class="ans"><p><span class="key">参考答案：</span>按事情发展顺序：接受任务→痛击敌人→引上绝路→顶峰歼敌→跳下悬崖。"壮士"指豪壮而勇敢的人，改称"壮士"更能突出五人英勇顽强、宁死不屈、壮烈豪迈的英雄气概，表达崇敬之情。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">写法</span>第 2 自然段怎样体现"点面结合"？</summary><div class="ans"><p><span class="key">参考答案：</span>"面"上整体写六班五个战士诱敌上山、痛击敌人的群像；"点"上分别描写班长马宝玉沉着指挥、葛振林打一枪就大吼、宋学义使出浑身力气、胡德林和胡福才绷紧脸瞄准等具体动作。整体场面与个体特写结合，使英雄群像既全面又鲜明。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">品析</span>"他刚要拧开盖子，马宝玉抢前一步，夺过手榴弹插在腰间……"动作描写的作用？</summary><div class="ans"><p><span class="key">参考答案：</span>"抢前、夺过、插"等一连串动词，写出班长当机立断、把最后一颗手榴弹留到最关键时用的沉着机智，表现他作战经验丰富、以最小代价多歼敌人的英雄本色。</p></div></details>
+  </div>
+
+  <div class="card">
+    <h3>第 6 课《开国大典》</h3>
+    <details class="quiz"><summary><span class="q-tag">理解</span>课文写了开国大典的哪几个场面？按什么顺序？</summary><div class="ans"><p><span class="key">参考答案：</span>按时间顺序写了群众入场、举行典礼（升旗鸣炮、宣读公告）、阅兵式、群众游行四个场面，条理清楚地再现大典庄严、隆重、盛大的盛况。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">写法</span>阅兵式部分是怎样运用点面结合的？</summary><div class="ans"><p><span class="key">参考答案：</span>"面"上整体写受检阅部队缓缓入场、全场群众欢呼鼓掌的盛大场面；"点"上具体描写海军、步兵、炮兵、战车师、骑兵师以及空军飞机等各兵种的不同特点。点面结合既写出阅兵的整体声势，又写出各部队威武整齐的细节。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">品析</span>"两股'红流'分头向东城、西城的街道流去，光明充满了整个北京城"有什么含义？</summary><div class="ans"><p><span class="key">参考答案：</span>"红流"既指举着火把游行的群众队伍，又象征革命的洪流；"光明"一语双关，既指灯笼火把照亮了北京城，又象征新中国成立给全国带来了光明和希望。</p></div></details>
+  </div>
+
+  <div class="card">
+    <h3>第 7 课《我的战友邱少云》</h3>
+    <details class="quiz"><summary><span class="q-tag">理解</span>邱少云为什么在烈火中能"纹丝不动"？</summary><div class="ans"><p><span class="key">参考答案：</span>因为他牢记部队潜伏纪律和夺取 391 高地的整体作战任务，深知只要自己动一下就会暴露整个潜伏部队、破坏作战计划。他把集体利益和战斗胜利看得高于生命，以钢铁意志强忍剧痛、壮烈牺牲。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">写法</span>课文主要通过什么描写表现邱少云？为什么这样写？</summary><div class="ans"><p><span class="key">参考答案：</span>主要通过"我"的心理活动（担心、痛苦、矛盾）和"千斤巨石"的比喻侧面烘托。因为"我"只能看不能救，"我"的紧张痛苦、不敢抬头又忍不住看，更能反衬邱少云严守纪律、牺牲自己的伟大，比直接描写更震撼人心。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">品析</span>"这个伟大的战士，像千斤巨石，伏在那儿纹丝不动"比喻好在哪里？</summary><div class="ans"><p><span class="key">参考答案：</span>把烈火中的邱少云比作"千斤巨石"，写出他身体沉重稳定、纹丝不动的姿态，更写出他意志如巨石般坚定、不可动摇，形象地表现了他为了整体利益不惜牺牲的崇高精神。</p></div></details>
+  </div>
+
+  <div class="card">
+    <h3>文言文①《伯牙鼓琴》</h3>
+    <details class="quiz"><summary><span class="q-tag">翻译</span>翻译"锺子期死，伯牙破琴绝弦，终身不复鼓琴，以为世无足复为鼓琴者"。</summary><div class="ans"><p><span class="key">参考答案：</span>锺子期死后，伯牙把琴摔破、把弦扯断，一辈子再也不弹琴了；他认为世上再没有值得自己为他弹琴的人了。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">理解</span>伯牙为什么"破琴绝弦，终身不复鼓琴"？</summary><div class="ans"><p><span class="key">参考答案：</span>因为锺子期是唯一能听懂他琴声、理解他心志的"知音"。锺子期一死，世上再没有能真正懂他的人；这个举动表现他失去知音的极度悲痛和对知音的珍视——知音难觅。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">常识</span>"高山流水"这个成语是什么意思？现在常用来比喻什么？</summary><div class="ans"><p><span class="key">参考答案：</span>出自本文伯牙鼓琴志在太山、流水的故事，原指乐曲高妙；现在多比喻知音难觅，也比喻乐曲或作品高雅精妙、朋友间心意相通。</p></div></details>
+  </div>
+
+  <div class="card">
+    <h3>文言文②《陈太丘与友期行》</h3>
+    <details class="quiz"><summary><span class="q-tag">翻译</span>翻译"日中不至，则是无信；对子骂父，则是无礼"。</summary><div class="ans"><p><span class="key">参考答案：</span>正午时您没有到，就是不讲信用；当着儿子的面骂他的父亲，就是没有礼貌。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">理解</span>元方的"方正"表现在哪些方面？（写出四条）</summary><div class="ans"><p><span class="key">参考答案：</span>①他懂得"信"的重要，指出友人日中不至是无信；②懂得"礼"的重要，指出对子骂父是无礼；③辩驳有理有据、落落大方，面对发怒的长辈不卑不亢；④以"入门不顾"的行为维护了父亲和自己的尊严。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">思辨</span>你认为元方"入门不顾"是否失礼？说明理由。</summary><div class="ans"><p><span class="key">参考答案：</span>示例一（不失礼）：友人失信又无礼在先，元方"入门不顾"是坚持原则、维护父亲和自己的尊严；他年仅七岁，不应求全责备。示例二（失礼）：友人已经惭愧、下车拉他示好，且是父亲的朋友、长辈，应该给人改错的机会，以宽容和礼貌相待。言之成理即可。</p></div></details>
+  </div>
+
+  <div class="card">
+    <h3>整本书《童年》</h3>
+    <details class="quiz"><summary><span class="q-tag">人物</span>外祖母是一个怎样的人？她对阿廖沙有什么影响？</summary><div class="ans"><p><span class="key">参考答案：</span>外祖母慈祥善良、聪明能干、乐观坚强、胸怀宽广，像一盏明灯照亮阿廖沙。在充满仇恨、争吵和苦难的外祖父家里，她保护阿廖沙、给他讲民间故事、教他做人要善良正直，是阿廖沙最亲近、最依赖的人。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">理解</span>小说为什么以"童年"为题，却写了那么多"黑暗"的事？</summary><div class="ans"><p><span class="key">参考答案：</span>作品一方面真实揭露 19 世纪末俄国底层社会的自私、残暴与苦难（外祖父的打骂、舅舅的争斗、贫穷与死亡）；另一方面写外祖母、小茨冈、"好事情"等人给予的温暖与知识。正是在这样的"黑暗"中，阿廖沙依然成长为坚强、善良、渴求知识的孩子，突出了"苦难中也要保持光和善"的主旨。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">常识</span>《童年》是什么体裁？"自传体三部曲"是哪三部？</summary><div class="ans"><p><span class="key">参考答案：</span>《童年》是高尔基以自身经历为原型创作的自传体小说，主人公阿廖沙就是高尔基的乳名。三部曲为《童年》《在人间》《我的大学》，分别写他幼年寄居外祖父家、少年外出谋生、青年上"社会大学"的成长历程。</p></div></details>
+  </div>
+</section>
+
+<!-- ========== 第二部分：字词大盘点 ========== -->
+<section id="part2">
+  <div class="sec-head">
+    <span class="sec-num">二</span>
+    <div>
+      <h2>字词大盘点</h2>
+      <div class="en">WORDS &amp; PHRASES</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>现代文高频会写字 <span class="dyn">节选易考字 · 看拼音写词语必会</span></h3>
+    <div class="chips">
+      <span class="chip">毯<span class="py">tǎn</span><small>地毯</small></span>
+      <span class="chip">裳<span class="py">shang</span><small>衣裳</small></span>
+      <span class="chip">腐<span class="py">fǔ</span><small>豆腐</small></span>
+      <span class="chip">稍<span class="py">shāo</span><small>稍微</small></span>
+      <span class="chip">缀<span class="py">zhuì</span><small>点缀</small></span>
+      <span class="chip">幽<span class="py">yōu</span><small>幽雅</small></span>
+      <span class="chip">薄<span class="py">bó</span><small>单薄</small></span>
+      <span class="chip">德<span class="py">dé</span><small>品德</small></span>
+      <span class="chip">鹊<span class="py">què</span><small>喜鹊</small></span>
+      <span class="chip">蝉<span class="py">chán</span><small>鸣蝉</small></span>
+      <span class="chip">崖<span class="py">yá</span><small>悬崖</small></span>
+      <span class="chip">渡<span class="py">dù</span><small>渡江</small></span>
+      <span class="chip">索<span class="py">suǒ</span><small>铁索</small></span>
+      <span class="chip">寇<span class="py">kòu</span><small>敌寇</small></span>
+      <span class="chip">抡<span class="py">lūn</span><small>抡起</small></span>
+      <span class="chip">沸<span class="py">fèi</span><small>沸腾</small></span>
+      <span class="chip">屹<span class="py">yì</span><small>屹立</small></span>
+      <span class="chip">崖<span class="py">yá</span><small>悬崖绝壁</small></span>
+      <span class="chip">政<span class="py">zhèng</span><small>政府</small></span>
+      <span class="chip">爆<span class="py">bào</span><small>爆发</small></span>
+      <span class="chip">泽<span class="py">zé</span><small>润泽</small></span>
+      <span class="chip">宣<span class="py">xuān</span><small>宣告</small></span>
+      <span class="chip">帜<span class="py">zhì</span><small>旗帜</small></span>
+      <span class="chip">制<span class="py">zhì</span><small>制服</small></span>
+      <span class="chip">坦<span class="py">tǎn</span><small>坦克</small></span>
+      <span class="chip">距<span class="py">jù</span><small>距离</small></span>
+      <span class="chip">隆<span class="py">lóng</span><small>隆重</small></span>
+      <span class="chip">歼<span class="py">jiān</span><small>歼灭</small></span>
+      <span class="chip">控<span class="py">kòng</span><small>控制</small></span>
+    </div>
+    <p style="font-size:13.5px;color:var(--ink-soft);margin-top:12px;">辨析提醒：<b>崖／涯</b>（山崖／天涯）；<b>爆／暴</b>（爆发／暴雨）；<b>渡／度</b>（渡江／温度）；<b>沸／佛</b>（沸腾／仿佛）；<b>隆</b>字中间一横别漏。</p>
+  </div>
+
+  <div class="card">
+    <h3>多音字汇总</h3>
+    <div class="table-wrap">
+      <table>
+        <caption>读准不同读音并能组词</caption>
+        <thead><tr><th>字</th><th>读音①与组词</th><th>读音②与组词</th><th>课文用例</th></tr></thead>
+        <tbody>
+          <tr><td>宿</td><td><span class="py">sù</span> 住宿</td><td><span class="py">xiǔ</span> 住一宿 / <span class="py">xiù</span> 星宿</td><td>宿建德江（sù）</td></tr>
+          <tr><td>泊</td><td><span class="py">bó</span> 停泊</td><td><span class="py">pō</span> 湖泊</td><td>移舟泊烟渚（bó）</td></tr>
+          <tr><td>卷</td><td><span class="py">juǎn</span> 卷地风来</td><td><span class="py">juàn</span> 试卷</td><td>卷地风来忽吹散</td></tr>
+          <tr><td>散</td><td><span class="py">sàn</span> 吹散、散步</td><td><span class="py">sǎn</span> 松散</td><td>忽吹散（sàn）</td></tr>
+          <tr><td>见</td><td><span class="py">jiàn</span> 看见</td><td><span class="py">xiàn</span> 同"现"，出现</td><td>路转溪桥忽见（xiàn）</td></tr>
+          <tr><td>薄</td><td><span class="py">báo</span> 薄饼</td><td><span class="py">bó</span> 单薄、刻薄</td><td>单薄（bó）</td></tr>
+          <tr><td>弹</td><td><span class="py">dàn</span> 子弹、手榴弹</td><td><span class="py">tán</span> 弹琴、动弹</td><td>手榴弹／弹琴</td></tr>
+          <tr><td>奔</td><td><span class="py">bēn</span> 奔跑</td><td><span class="py">bèn</span> 投奔</td><td>投奔外祖父（bèn）</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>必听写四字词语</h3>
+    <div class="chips">
+      <span class="chip">一碧千里</span><span class="chip">翠色欲流</span><span class="chip">群马疾驰</span>
+      <span class="chip">襟飘带舞</span><span class="chip">孤芳自赏</span><span class="chip">映入眼帘</span>
+      <span class="chip">断断续续</span><span class="chip">窸窸窣窣</span><span class="chip">居高临下</span>
+      <span class="chip">斩钉截铁</span><span class="chip">粉身碎骨</span><span class="chip">昂首挺胸</span>
+      <span class="chip">坚强不屈</span><span class="chip">惊天动地</span><span class="chip">气壮山河</span>
+      <span class="chip">排山倒海</span><span class="chip">迎风招展</span><span class="chip">四面八方</span>
+      <span class="chip">千钧一发</span><span class="chip">纹丝不动</span><span class="chip">满腔怒火</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>文言文重点字词 <span class="dyn">解释、翻译、辨析常考</span></h3>
+    <div class="table-wrap">
+      <table>
+        <caption>《伯牙鼓琴》＋《陈太丘与友期行》</caption>
+        <thead><tr><th>字词</th><th>意思</th><th>所在句</th></tr></thead>
+        <tbody>
+          <tr><td>鼓</td><td>弹</td><td>伯牙鼓琴</td></tr>
+          <tr><td>志</td><td>心志、情志</td><td>志在太山</td></tr>
+          <tr><td>善哉</td><td>好啊</td><td>善哉乎鼓琴</td></tr>
+          <tr><td>巍巍</td><td>高大的样子</td><td>巍巍乎若太山</td></tr>
+          <tr><td>少选</td><td>一会儿，不久</td><td>少选之间</td></tr>
+          <tr><td>汤汤 shāng shāng</td><td>水流大而急的样子</td><td>汤汤乎若流水</td></tr>
+          <tr><td>复／足</td><td>再／值得</td><td>终身不复鼓琴／无足复为鼓琴者</td></tr>
+          <tr><td>期</td><td>约定</td><td>与友期行，期日中</td></tr>
+          <tr><td>舍去</td><td>丢下（他）离开</td><td>太丘舍去</td></tr>
+          <tr><td>不</td><td>读 fǒu，同"否"</td><td>尊君在不</td></tr>
+          <tr><td>委</td><td>舍弃</td><td>相委而去</td></tr>
+          <tr><td>引／顾</td><td>拉／回头看</td><td>下车引之／入门不顾</td></tr>
+          <tr><td>家君／尊君</td><td>对人谦称自己的父亲／尊称对方的父亲</td><td>君与家君／尊君在不</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>重点词语注释自测</h3>
+    <p class="self-test-hint">点开核对答案；打印时全部自动展开。</p>
+    <details class="quiz"><summary><span class="q-tag">丁香结</span>"幽雅""恍然"各是什么意思？</summary><div class="ans"><p><b>幽雅</b>：幽静而雅致。<b>恍然</b>：形容忽然醒悟。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">狼牙山</span>"居高临下""斩钉截铁""屹立"</summary><div class="ans"><p><b>居高临下</b>：处在高处俯视下面，形容地势有利。<b>斩钉截铁</b>：比喻说话办事坚决果断、毫不犹豫。<b>屹立</b>：像山峰一样高耸而稳固地立着，形容坚定不可动摇。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">开国大典</span>"瞻仰""排山倒海"</summary><div class="ans"><p><b>瞻仰</b>：恭敬地看（多用于与逝者或庄重事物有关的对象）。<b>排山倒海</b>：推开高山、翻倒大海，形容力量强、声势大。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">邱少云</span>"漫山遍野""居高临下""火力警戒"</summary><div class="ans"><p><b>漫山遍野</b>：遍布山野，形容很多。<b>火力警戒</b>：用火力（打枪、打炮）防止对方突然袭击。</p></div></details>
+    <details class="quiz"><summary><span class="q-tag">童年</span>"弥漫""小心翼翼"（书中常见词）</summary><div class="ans"><p><b>弥漫</b>：（烟尘、雾气、水等）充满、布满。<b>小心翼翼</b>：形容举动十分谨慎，丝毫不敢疏忽。</p></div></details>
+  </div>
+</section>
+
